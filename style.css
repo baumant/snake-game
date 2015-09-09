@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    height: 602px;
+    width: 602px;
+    border: 1px solid;
+    display: inline-block;
+    line-height: 0;
+}
+
+.instructions {
+    float: left;
+    width: 395px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    font-size: x-large;
+}
+
+.center {
+    line-height: 64px;
+    margin: 0;
+}
+
+.instructions img {
+    width: 64px;
+    margin-right: 10px;
+    float: left;
+}
+
+.box {
+    background-image: url("grass.png");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.snake {
+    background-image: none;
+    background-color: black;
+}
+
+.food {
+    background-image: url("food.png"), url("grass.png");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.score-container {
+    float: left;
+    clear: left;
+    width: 255px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px 0 0 20px;
+    padding: 15px;
+    font-size: x-large;
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: inline-block;
+}
+
+.pause {
+    position: fixed;
+    transform: translate(-9%, -170%);
+    width: 500px;
+    height: 300px;
+    padding-top: 70px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.game-over {
+    position: fixed;
+    transform: translate(-9%, -170%);
+    width: 500px;
+    height: 300px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 0;
+    margin: 15px;
+    font-size: 14px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Snake</title>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="snake.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<img src="snake.jpg" alt="Black Snake" id="header">
+			<div class="instructions">
+				<p class="center"><img src="arrows.gif" alt="arrow keys"> control your snake</p>
+				<p class="center"><img src="esc.png" alt="esc key"> to pause game</p>
+				<p>Get the food to grow longer. Watch out for the sides and don't eat yourself!</p>
+				<p>Careful, as you grow your snake will move faster.</p>
+			</div>
+			<div class="score-container">
+				<h5>Score: <span class="score">0</span></h5>
+				<h5>Highscore: <span class="highscore">0</span></h5>
+			</div>
+			<div class="container">
+			</div>
+			<div class="pause off">
+				<h1>PAUSED...</h1>
+				<button class="resume">Resume</button>
+				<button class="new-game">New Game</button>
+			</div>
+			<div class="game-over off">
+				<h1>GAME OVER</h1>
+				<p>Highscore: <span class="highscore"></span></p>
+				<p>Score: <span class="score"></span></p>
+				<button class="new-game">New Game</button>
+			</div>
+		</div>
+	</body>
+</html>
